@@ -18,7 +18,7 @@ const server = createServer((req, res) => {
     res.end(html);
   }
   if (!res.writableEnded && path === '/favicon.ico') {
-    res.writeHead(200, { "content-type": "image/vnd.microsoft.icon" })
+    res.writeHead(200, { "content-type": "image/x-icon" })
     res.end(favicon_ico);
   }
 
